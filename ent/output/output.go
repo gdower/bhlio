@@ -1,19 +1,19 @@
 package output
 
 import (
-	"github.com/gdower/bhlinker/ent/name"
-	"github.com/gdower/bhlinker/ent/reference"
-	"github.com/gdower/bhlinker/ent/score"
-	bhln "github.com/gnames/bhlnames/domain/entity"
+	"github.com/gdower/bhlio/ent/name"
+	"github.com/gdower/bhlio/ent/refbhl"
+	"github.com/gdower/bhlio/ent/reference"
+	"github.com/gdower/bhlio/ent/score"
 )
 
 type Output struct {
-	InputID      string              `json:"inputId"`
-	InputName    name.Name           `json:"inputName"`
-	InputRef     reference.Reference `json:"inputRef,omitempty"`
-	OutputName   string              `json:"outputName,omitempty"`
-	EditDistance int                 `json:"editDistance,omitempty"`
-	Error        error               `json:"error,omitempty"`
-	BHLref       *bhln.Reference     `json:"referenceBHL"`
+	InputID      string               `json:"inputId"`
+	InputName    name.Name            `json:"inputName"`
+	InputRef     reference.Reference  `json:"inputRef,omitempty"`
+	OutputName   string               `json:"outputName,omitempty"`
+	EditDistance int                  `json:"editDistance,omitempty"`
+	Error        error                `json:"error,omitempty"`
+	BHLref       *refbhl.ReferenceBHL `json:"referenceBHL"`
 	score.Score  `json:"score"`
 }

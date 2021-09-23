@@ -1,8 +1,8 @@
 package input
 
 import (
-	"github.com/gdower/bhlinker/ent/name"
-	"github.com/gdower/bhlinker/ent/reference"
+	"github.com/gdower/bhlio/ent/name"
+	"github.com/gdower/bhlio/ent/reference"
 )
 
 type Input struct {
